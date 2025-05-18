@@ -1,0 +1,45 @@
+// variables
+$font-primary: Arial, sans-serif;
+$background-light: #f2f2f2;
+$spacing-medium: 20px;
+$text-primary: #6f42c1;
+$purple: #6f42c1;
+
+caption {
+    caption-side: top;
+}
+
+.table-dark {
+    --bs-table-bg: #0d6efd
+}
+
+// base styles
+body {
+  font-family: $font-primary;
+  background-color: $background-light;
+  padding: $spacing-medium;
+  line-height: 1.6;
+}
+
+.filled {
+    color: $purple
+}
+
+header {
+    color: $purple
+}
+
+h1 {
+  margin-bottom: $spacing-medium;
+}
+
+p {
+  margin-bottom: $spacing-medium;
+}
+
+@media (max-width: 768px) {
+    section {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+}
