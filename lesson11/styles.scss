@@ -1,0 +1,65 @@
+// variables
+$font-primary: Arial, sans-serif;
+$background-light: #f2f2f2;
+$text-dark: #333;
+$link-color: #0066cc;
+$image-border-radius: 8px;
+$spacing-medium: 20px;
+
+// base styles
+body {
+  font-family: $font-primary;
+  background-color: $background-light;
+  padding: $spacing-medium;
+  line-height: 1.6;
+}
+
+h1 {
+  color: $text-dark;
+  margin-bottom: $spacing-medium;
+}
+
+p {
+  margin-bottom: $spacing-medium;
+}
+
+// image styles
+img {
+  margin-bottom: $spacing-medium;
+  border-radius: $image-border-radius;
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+// fade
+.fade-image {
+  opacity: 0.5;
+  transition: opacity 0.5s ease;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+
+// link styles
+a {
+  color: $link-color;
+  text-decoration: none;
+  transition: color 0.3s ease;
+
+  &:hover {
+    text-decoration: underline;
+    color: darken($link-color, 10%);
+  }
+}
+
+ul {
+  padding-left: $spacing-medium;
+  margin-bottom: $spacing-medium;
+
+  li {
+    margin-bottom: 8px;
+  }
+}
